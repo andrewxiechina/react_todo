@@ -1,0 +1,54 @@
+/* Variables */
+$vin-blue: #5bb7db;
+$vin-green: #60b044;
+$vin-red: #ff0000;
+
+/* Styles */
+body {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+td {
+	padding: 12px;
+}
+
+h2 {
+
+}
+
+.page {
+  width: 100%;
+  min-height: 700px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;;
+
+  .page-header {
+    height: 150px;
+    background-color: orange;
+    margin: 0;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+    h1 {
+      font-size: 35px;
+      margin: 0;
+    }
+
+  }
+
+  .page-content {
+    flex: 4;
+    background: white;
+    padding: 5px;
+  }
+}
+
+.muted {
+  color: #f9f9f9;
+}
