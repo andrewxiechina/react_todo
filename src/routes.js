@@ -16,6 +16,6 @@ export default (
     <Route path="about" component={AboutPage}/>
     <Route path="todo" component={TodoPage} />
     <Route path="*" component={NotFoundPage}/>
-
+    <Route path="home" component={HomePage} />
   </Route>
 );

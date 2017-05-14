@@ -1,6 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router';
-import '../styles/todo.scss'
+import '../styles/todo.scss';
 const TodoPage = () => {
   return (
     <div className ="todoapp">
@@ -9,7 +8,7 @@ const TodoPage = () => {
         <input className="new-todo" placeholder="What needs to be done?" />
       </header>
 
-      <section class="main">
+      <section className="main">
         <input className="toggle-all" type="checkbox"/>
 
         <ul className="todo-list">
