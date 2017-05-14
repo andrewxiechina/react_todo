@@ -1,9 +1,18 @@
 /* eslint-disable import/default */
-import TodoPage from './containers/TodoPage'
 import React from 'react';
 import { render } from 'react-dom';
 
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import TodoPage from './containers/TodoPage';
+import todoApp from './reducers';
+
+
+let store = createStore(todoApp);
+
 render(
-  <TodoPage />,
+  <Provider store={store}>
+    <TodoPage />
+  </Provider>,
   document.getElementById('app')
 );
