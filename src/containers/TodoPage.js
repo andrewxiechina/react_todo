@@ -1,34 +1,20 @@
 import React from 'react';
 import '../styles/todo.scss';
+import TodoInput from '../components/todo/TodoInput';
+import TodoList from '../components/todo/TodoList';
+import TodoFilter from '../components/todo/TodoFilter';
 
 const TodoPage = () => {
   return (
     <div className ="todoapp">
-      <header>
-        <h1>todos</h1>
-        <input className="new-todo" placeholder="What needs to be done?" />
-      </header>
-
-      <section className="main">
-        <input className="toggle-all" type="checkbox"/>
-
-        <ul className="todo-list">
-          <li>
-            <input className="toggle" type="checkbox" />
-            <label>Hello</label>
-          </li>
-        </ul>
-      </section>
+      <TodoInput />
+      <TodoList />
 
       <footer className="footer">
         <span className="todo-count">
           <strong>2</strong><span> items left</span>
         </span>
-        <ul className="filters">
-          <li><a href="#/" className="selected">All</a></li>
-          <li><a href="#/">Active</a></li>
-          <li><a href="#/">Completed</a></li>
-        </ul>
+        <TodoFilter />
       </footer>
     </div>
   );
