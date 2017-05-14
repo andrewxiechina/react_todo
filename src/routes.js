@@ -7,12 +7,15 @@ import FuelSavingsPage from './containers/FuelSavingsPage'; // eslint-disable-li
 import AboutPage from './components/AboutPage';
 import NotFoundPage from './components/NotFoundPage';
 import Vocabulary from './components/Vocabulary';
+import TodoPage from './components/TodoPage';
 
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={Vocabulary}/>
     <Route path="fuel-savings" component={FuelSavingsPage}/>
     <Route path="about" component={AboutPage}/>
+    <Route path="todo" component={TodoPage} />
     <Route path="*" component={NotFoundPage}/>
+
   </Route>
 );
