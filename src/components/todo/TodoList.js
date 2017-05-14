@@ -8,7 +8,7 @@ export default class TodoList extends Component {
 
         <ul className="todo-list">
           {this.props.todos.map((todo) => (
-            <li>
+            <li key={todo.id}>
               <input className="toggle" type="checkbox" checked={todo.completed ? "checked" : null}/>
               <label>{todo.content}</label>
             </li>

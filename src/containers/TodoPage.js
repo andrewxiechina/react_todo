@@ -22,6 +22,16 @@ export default class TodoPage extends Component{
           content: "Call my girl and tell her I love her.",
           completed: false,
         },
+        {
+          id: 3,
+          content: "Wake up early.",
+          completed: false,
+        },
+        {
+          id: 4,
+          content: "Be bright, be early.",
+          completed: false,
+        },
       ]
     }
   }
@@ -33,9 +43,9 @@ export default class TodoPage extends Component{
 
         <footer className="footer">
           <span className="todo-count">
-            <strong>2</strong><span> items left</span>
+            <strong>{this.state.todos.length}</strong><span> items left</span>
           </span>
-          <TodoFilter />
+          <TodoFilter filter={this.state.filter}/>
         </footer>
       </div>
     );
